@@ -159,6 +159,9 @@ print(math.e)
     d.空值
     类似于java的null，表示没有值，只有一个直接量
     None
+"""
+a = None
+"""
 4.运算符
     a.  关系运算符
         == 等于 比较对象是否相等
@@ -170,10 +173,71 @@ print(math.e)
         <=小于等于
     b. 赋值运算符 
         =简单的赋值运算符
-         
+        +=加法赋值运算符
+        -=减法赋值运算符
+        *=乘法赋值运算符
+        /=除法赋值运算符
+        %=取模赋值运算符
+        **=幂...
+        //== 取整除...
+    c.位运算符
+        &
+        |
+        ~
+        <<
+        >>
+        ^ 
+    d.逻辑运算符
+        and
+        or
+        not
+    e.成员运算符
+        in 如果在指定序列中找到值返回True，否则返回False
+        not in 
+    f.身份运算符
+        is      判断是否指向同一个对象
+        is not
+条件运算符:
+    if判断
 """
-x = None
+n = 11
+if n<10:
+    print("haha")
+elif n<100:
+    print("hehe")
+else:
+    print("xixi")
+"""
+    while循环
+"""
+sum = 0
+n = 0
+while n <= 10:
+    sum += n
+    n += 1
+else:
+    print("循环条件不成立时，就执行这里")
+print(sum)
 
+"""
+    for循环
+        foreach
+"""
+l1 = [ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 ]
 
+for i in l1:
+    print(i)
+"""
+        普通for循环
+"""
+for i in range(5):
+    print("haha")
+else:
+    print("for循环结束")
+"""普通for循环
 
-
+"""
+for i in range(1,10):
+    for j in range(1,i+1):
+        print(j.__str__()+"*"+i.__str__()+"="+(i*j).__str__(), end='\t')
+    print("\n")
